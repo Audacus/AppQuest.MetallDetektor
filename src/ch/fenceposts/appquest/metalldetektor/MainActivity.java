@@ -40,8 +40,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 		Log.d(DEBUG_TAG, Integer.toString(controllerSensor.getSensorList(Sensor.TYPE_MAGNETIC_FIELD).size()));
 
 		// check and try to add magnetic field sensor
-		if ((sensorMagneticField = controllerSensor.getSensorList(
-				Sensor.TYPE_MAGNETIC_FIELD).get(0)) == null) {
+		if ((sensorMagneticField = controllerSensor.getSensorList(Sensor.TYPE_MAGNETIC_FIELD).get(0)) == null) {
 			try {
 				throw new Exception("No magnetic field sensor found!");
 			} catch (Exception e) {

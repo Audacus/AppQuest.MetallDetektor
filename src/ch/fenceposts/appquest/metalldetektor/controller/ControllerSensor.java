@@ -21,7 +21,8 @@ public class ControllerSensor {
 	}
 
 	/**
-	 * @param sensorManager the sensorManager to set
+	 * @param sensorManager
+	 *            the sensorManager to set
 	 */
 	public void setSensorManager(SensorManager sensorManager) {
 		this.sensorManager = sensorManager;
